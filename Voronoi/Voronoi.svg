@@ -1,0 +1,129 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="500" height="500" fill="white"/>
+	<g stroke-width="3.0">
+<g fill="red" stroke="red">
+ <polygon class="test test2" points="0,0 500,0 500,500 0,500" transform="translate(0 0)" opacity="1" fill="none" stroke="black" stroke-width="5" />
+ </g>
+ <g fill="green" stroke="green">
+ <line x1="-32.162" y1="392" x2="93.426" y2="334.633" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="blue" stroke="blue">
+ <line x1="-32.162" y1="392" x2="-28754.083" y2="13511.89" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="purple" stroke="purple">
+ <line x1="-216.032" y1="123" x2="-53745.63" y2="-17530.378" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="orange" stroke="orange">
+ <line x1="-216.032" y1="123" x2="37.894" y2="206.742" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="saddlebrown" stroke="saddlebrown">
+ <line x1="97.778" y1="112" x2="-9535.604" y2="-7769.858" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="mediumseagreen" stroke="mediumseagreen">
+ <line x1="97.778" y1="112" x2="143.673" y2="149.551" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="darkolivegreen" stroke="darkolivegreen">
+ <line x1="68.836" y1="278" x2="37.894" y2="206.742" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="lightskyblue" stroke="lightskyblue">
+ <line x1="68.836" y1="278" x2="93.426" y2="334.633" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="dimgray" stroke="dimgray">
+ <line x1="37.894" y1="206.742" x2="84.134" y2="202.565" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="mediumpurple" stroke="mediumpurple">
+ <line x1="93.426" y1="334.633" x2="130.123" y2="347.187" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="midnightblue" stroke="midnightblue">
+ <line x1="91.508" y1="196" x2="143.673" y2="149.551" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="olive" stroke="olive">
+ <line x1="91.508" y1="196" x2="84.134" y2="202.565" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="chartreuse" stroke="chartreuse">
+ <line x1="84.134" y1="202.565" x2="194.663" y2="271.309" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="darkorchid" stroke="darkorchid">
+ <line x1="143.673" y1="149.551" x2="174.519" y2="128.987" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="hotpink" stroke="hotpink">
+ <line x1="131.651" y1="352" x2="130.123" y2="347.187" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="darkred" stroke="darkred">
+ <line x1="131.651" y1="352" x2="193.803" y2="547.779" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="peru" stroke="peru">
+ <line x1="130.123" y1="347.187" x2="194.663" y2="271.309" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="goldenrod" stroke="goldenrod">
+ <line x1="186.913" y1="186" x2="174.519" y2="128.987" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="mediumslateblue" stroke="mediumslateblue">
+ <line x1="186.913" y1="186" x2="204.943" y2="268.936" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="orangered" stroke="orangered">
+ <line x1="174.519" y1="128.987" x2="184.137" y2="115.731" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="darkmagenta" stroke="darkmagenta">
+ <line x1="201.138" y1="130" x2="184.137" y2="115.731" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="darkgoldenrod" stroke="darkgoldenrod">
+ <line x1="201.138" y1="130" x2="379.186" y2="279.433" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="mediumslateblue" stroke="mediumslateblue">
+ <line x1="184.137" y1="115.731" x2="476.428" y2="-2303.79" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="firebrick" stroke="firebrick">
+ <line x1="194.663" y1="271.309" x2="204.943" y2="268.936" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="palegreen" stroke="palegreen">
+ <line x1="204.943" y1="268.936" x2="379.186" y2="279.433" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="royalblue" stroke="royalblue">
+ <line x1="238.1" y1="490" x2="396.188" y2="283.798" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="tan" stroke="tan">
+ <line x1="238.1" y1="490" x2="193.803" y2="547.779" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="tomato" stroke="tomato">
+ <line x1="193.803" y1="547.779" x2="-951.927" y2="4125.261" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="springgreen" stroke="springgreen">
+ <line x1="379.186" y1="279.433" x2="396.188" y2="283.798" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="pink" stroke="pink">
+ <line x1="396.188" y1="283.798" x2="1577.285" y2="-119.743" transform="translate(0 0)" opacity="1" stroke="purple" stroke-dasharray="2, 5" stroke-width="5" />
+ </g>
+ <g fill="orchid" stroke="orchid">
+ <ellipse cx="201" cy="352" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="saddlebrown" stroke="saddlebrown">
+ <ellipse cx="38" cy="311" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="moccasin" stroke="moccasin">
+ <ellipse cx="114" cy="278" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="mistyrose" stroke="mistyrose">
+ <ellipse cx="211" cy="186" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="cornflowerblue" stroke="cornflowerblue">
+ <ellipse cx="165" cy="196" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="darkgrey" stroke="darkgrey">
+ <ellipse cx="258" cy="130" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="red" stroke="red">
+ <ellipse cx="100" cy="123" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="green" stroke="green">
+ <ellipse cx="109" cy="112" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="blue" stroke="blue">
+ <ellipse cx="381" cy="490" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+ <g fill="purple" stroke="purple">
+ <ellipse cx="75" cy="392" rx="1" ry="1" transform="translate(0 0)" opacity="1" fill="purple" stroke-width="0" />
+ </g>
+
+	</g>
+</svg>
