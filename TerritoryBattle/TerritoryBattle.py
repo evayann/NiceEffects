@@ -358,9 +358,9 @@ def generate_cli():
 	g.add_argument("-t", "--turns", metavar="INT", type=int,
 	               help="The number of turn to play during battle.", default=10)
 	g.add_argument("-wdt", "--width", metavar="INT", type=int,
-	               help="The width of battle zone.", default=10, choices=range(5, 50))
+	               help="The width of battle zone.", default=10, choices=range(5, 51))
 	g.add_argument("-hgt", "--height", metavar="INT", type=int,
-	               help="The height of battle zone.", default=10, choices=range(5, 50))
+	               help="The height of battle zone.", default=10, choices=range(5, 51))
 	g.add_argument("-d", "--duration", metavar="INT", type=int,
 	               help="Time in second for the battle. Default 10 seconds.", default=10)
 	g.add_argument("-s", "--seed", metavar="INT", type=int,
