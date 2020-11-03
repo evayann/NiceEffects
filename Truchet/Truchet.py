@@ -1,5 +1,5 @@
 import random
-from SVGVideoMaker import SVG, Polygon, Point2D, EllipseArc
+from SVGVideoMaker import SVG, Polygon, Point2D, EllipseArc, Segment
 
 class Truchet:
 
@@ -30,7 +30,7 @@ class TruchetTriangles(Truchet):
 		self.color = color
 		self.svg_shape()
 
-	def svg_shape(self, rule=None):
+	def svg_shape(self):
 		"""A Truchet figure based on triangles.
 
 		The four triangle orientations to choose from in each square are:
@@ -39,8 +39,8 @@ class TruchetTriangles(Truchet):
 
 		"""
 
-		if rule is None:
-			rule = lambda ix, iy: random.randint(0,4)
+		if self.rule is None:
+			self.rule = lambda xi, yi: random.randint(0,4)
 
 		def triangle_path(A, B, C):
 			"""Output a triangular path with vertices at A, B, C."""
@@ -52,7 +52,7 @@ class TruchetTriangles(Truchet):
 			for iy in range(self.ny):
 				x0, y0 = ix * self.s, iy * self.s
 				x1, y1 = (ix + 1) * self.s, (iy + 1) * self.s
-				p = rule(ix, iy)
+				p = self.rule(ix, iy)
 				if p == 0:
 					triangle_path(Point2D(x0, y0), Point2D(x1, y0), Point2D(x1, y1))
 				elif p == 1:
@@ -82,7 +82,7 @@ class TruchetArcs(Truchet):
 			self.elements.append(a)
 
 		if self.rule is None:
-			self.rule = lambda ix, iy: random.randint(0,1)
+			self.rule = lambda xi, yi: random.randint(0,1)
 
 		if not self.rx:
 			self.rx = self.s / 2
@@ -104,9 +104,8 @@ class TruchetArcs(Truchet):
 class TruchetCustom(Truchet):
 	"""A class for creating a Truchet tiling of custom draw."""
 
-	def __init__(self, width, height, s, color, drawfunc, rule=None):
+	def __init__(self, width, height, s, drawfunc, rule=None):
 		super(TruchetCustom, self).__init__(width, height, s, rule)
-		self.color = color
 		self.df = drawfunc
 		self.svg_shape()
 
@@ -135,14 +134,14 @@ if __name__ == '__main__':
 		def set_style(el):
 			el.set_style(fill_color="none", stroke_color="purple")
 		elements = []
-		if orientation == 0 or orientation == 3:
+		if orientation == 0:
 			e1 = EllipseArc(tl + Point2D(0, s), Point2D(s / 3, s / 2), 0, 90)
 			e2 = EllipseArc(br - Point2D(0, s), Point2D(s / 1.5, s / 3), 180, 270)
 			set_style(e1)
 			set_style(e2)
 			elements.append(e1)
 			elements.append(e2)
-		elif orientation == 1 or orientation == 2:
+		elif orientation == 1:
 			e1 = EllipseArc(tl, Point2D(s / 1.5, s / 3), 270, 360)
 			e2 = EllipseArc(br, Point2D(s / 3, s / 2), 90, 180)
 			set_style(e1)
@@ -152,5 +151,38 @@ if __name__ == '__main__':
 		return elements
 
 	rule = lambda xi, yi: xi % 2 + yi * s % 2
-	truchet = TruchetCustom(w, h, s, drawfunc=df, color="#882ecf", rule=rule)
+	truchet = TruchetCustom(w, h, s, drawfunc=df, rule=rule)
 	truchet.make_svg("ellipse")
+
+	def df(orientation, tl, br):
+
+		lines = None
+		circles = None
+		if orientation == 0 or orientation == 3:
+			l1 = Segment(tl + Point2D(0, s / 4), br - Point2D(s / 4, 0))
+			l2 = Segment(tl + Point2D(s / 4, 0), br - Point2D(0, s / 4))
+			e1 = EllipseArc(l1.get_center(), Point2D(s / 4, s / 4), 45, 225)
+			e2 = EllipseArc(l2.get_center(), Point2D(s / 4, s / 4), 135, 315)
+			lines = [l1, l2]
+			circles = [e1, e2]
+		elif orientation == 1 or orientation == 2:
+			tr = Point2D(br.x, tl.y)
+			bl = Point2D(tl.x, br.y)
+			l1 = Segment(tr + Point2D(0, s / 4), bl + Point2D(s / 4, 0))
+			l2 = Segment(tr - Point2D(s / 4, 0), bl - Point2D(0, s / 4))
+			e1 = EllipseArc(l1.get_center(), Point2D(s / 4, s / 4), 135, 315)
+			e2 = EllipseArc(l2.get_center(), Point2D(s / 4, s / 4), 45, 225)
+			lines = [l1, l2]
+			circles = [e1, e2]
+
+		for line in lines:
+			line.set_style(stroke_color="red")
+		for i, circle in enumerate(circles):
+			color = "blue" if i % 2 == 0 else "green"
+			circle.set_style(stroke_color=color, fill_color="none")
+
+		return circles + lines
+
+	rule = lambda xi, yi: xi % 2 if yi % 2 == 0 else 2 + xi % 2
+	truchet = TruchetCustom(w, h, s, drawfunc=df, rule=rule)
+	truchet.make_svg("lines&round")
